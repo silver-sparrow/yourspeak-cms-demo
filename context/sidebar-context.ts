@@ -2,9 +2,13 @@ import {
   Bell,
   BookOpen,
   Camera,
+  Hash,
   LayoutDashboard,
   Settings2,
   TableOfContents,
+  Tags,
+  Users,
+  UsersRound,
 } from "lucide-react";
 
 export const SIDEBAR_DATA = {
@@ -23,10 +27,14 @@ export const SIDEBAR_DATA = {
         {
           title: "Users",
           url: "/",
+          icon: UsersRound,
+          
+          
         },
         {
           title: "Tags",
           url: "/tags",
+          icon: Hash,
         },
         {
           title: "Reports",
@@ -41,7 +49,7 @@ export const SIDEBAR_DATA = {
       items: [
         {
           title: "Posts",
-          url: "#",
+          url: "/posts",
         },
         {
           title: "Discussions",
