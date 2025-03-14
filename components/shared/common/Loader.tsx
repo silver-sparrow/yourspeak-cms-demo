@@ -10,6 +10,7 @@ const Loader = () => {
         className="w-96 h-96"
         width={1000}
         height={1000}
+        priority
       />
     </div>
   );

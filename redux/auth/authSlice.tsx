@@ -54,12 +54,14 @@ const authSlicer = createSlice({
       state.access_token = action.payload.access_token;
       state.token_type = action.payload.token_type;
       state.expires_in = action.payload.expires_in;
+      localStorage.setItem("token", action.payload.access_token);
     });
-    builder.addCase(logoutUser.fulfilled, (state, action) => {
+    builder.addCase(logoutUser.fulfilled, (state) => {
       state.access_token = null;
       state.token_type = null;
       state.expires_in = null;
       localStorage.removeItem("auth");
+      localStorage.removeItem("token");
     });
     builder.addCase(globalLoading.fulfilled, (state, action) => {
       state.isGlobalLoading = action.payload;
