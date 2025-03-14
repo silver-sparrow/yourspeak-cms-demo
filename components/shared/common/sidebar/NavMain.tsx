@@ -58,13 +58,13 @@ const NavMain = ({
                 <CollapsibleTrigger asChild>
                   <SidebarMenuButton isActive={isGroupActive}>
                     {item.icon && <item.icon />}
-                    <span>{item.title}</span>
+                    <span className="font-semibold text-md">{item.title}</span>
                     <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />
                   </SidebarMenuButton>
                 </CollapsibleTrigger>
 
                 <CollapsibleContent>
-                  <SidebarMenuSub>
+                  <SidebarMenuSub className="pt-2">
                     {item.items?.map((subItem) => {
                       const isActive =
                         pathname === subItem.url ||
@@ -76,7 +76,9 @@ const NavMain = ({
                             <Link href={subItem.url}>
                               <>
                                 {subItem.icon && (
-                                  <subItem.icon className="mr-2 size-4" />
+                                  <span>
+                                    <subItem.icon className="size-4" />
+                                  </span>
                                 )}
                                 <span>{subItem.title}</span>
                               </>

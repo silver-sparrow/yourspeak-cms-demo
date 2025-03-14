@@ -516,14 +516,12 @@ function SidebarMenuButton({
       data-sidebar="menu-button"
       data-size={size}
       data-active={isActive}
-
       className={cn(
         sidebarMenuButtonVariants({ variant, size }),
-        "transition-colors",
-        "data-[active=true]:bg-[#d62027] data-[active=true]:text-white",
+        "transition-colors py-6",
+        "data-[active=true]:bg-gray-200 data-[active=true]:text-black",
         className
       )}
-      
       {...props}
     />
   );
@@ -692,8 +690,8 @@ function SidebarMenuSubButton({
       data-size={size}
       data-active={isActive}
       className={cn(
-        "p-5  text-sidebar-foreground ring-sidebar-ring hover:bg-[#d62027] hover:text-white active:bg-[#d62027] active:text-white [&>svg]:text-sidebar-foreground hover:[&>svg]:text-white active:[&>svg]:text-white flex h-7 min-w-0 -translate-x-px items-center gap-2 overflow-hidden rounded-md px-2 outline-hidden focus-visible:ring-2 disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0",
-        "data-[active=true]:bg-[#d62027] data-[active=true]:text-white",
+        "p-4 text-sidebar-foreground ring-sidebar-ring hover:bg-[#d62027] hover:text-white active:bg-[#d62027] active:text-white [&>svg]:text-sidebar-foreground hover:[&>svg]:text-white active:[&>svg]:text-white flex h-7 min-w-0 -translate-x-px items-center gap-2 overflow-hidden rounded-md px-2 outline-hidden focus-visible:ring-2 disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50 [&>span:last-child]:truncate [&>svg]:size-4 [&>svg]:shrink-0",
+        "data-[active=true]:bg-[#d62027] data-[active=true]:text-white data-[active=true]:font-medium",
         size === "sm" && "text-xs",
         size === "md" && "text-sm",
         "group-data-[collapsible=icon]:hidden",

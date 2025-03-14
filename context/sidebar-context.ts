@@ -1,14 +1,31 @@
 import {
   Bell,
+  Bookmark,
   BookOpen,
+  Calendar,
   Camera,
+  EyeOff,
+  FileText,
+  FileWarning,
   Hash,
+  Image,
   LayoutDashboard,
+  Link,
+  List,
+  MapPin,
+  MessageCircle,
+  MessageSquare,
+  Music,
+  Podcast,
+  Repeat,
+  Search,
+  Settings,
   Settings2,
+  Share2,
+  Smile,
   TableOfContents,
-  Tags,
-  Users,
   UsersRound,
+  Video,
 } from "lucide-react";
 
 export const SIDEBAR_DATA = {
@@ -28,8 +45,6 @@ export const SIDEBAR_DATA = {
           title: "Users",
           url: "/",
           icon: UsersRound,
-          
-          
         },
         {
           title: "Tags",
@@ -39,6 +54,7 @@ export const SIDEBAR_DATA = {
         {
           title: "Reports",
           url: "/reports",
+          icon: FileWarning,
         },
       ],
     },
@@ -50,26 +66,32 @@ export const SIDEBAR_DATA = {
         {
           title: "Posts",
           url: "/posts",
+          icon: FileText,
         },
         {
           title: "Discussions",
           url: "#",
+          icon: MessageSquare,
         },
         {
           title: "Listings",
           url: "#",
+          icon: List,
         },
         {
           title: "Respeaks",
           url: "#",
+          icon: Repeat,
         },
         {
           title: "Reactions",
           url: "#",
+          icon: Smile,
         },
         {
           title: "Comments",
           url: "#",
+          icon: MessageCircle,
         },
       ],
     },
@@ -81,10 +103,12 @@ export const SIDEBAR_DATA = {
         {
           title: "Searching",
           url: "#",
+          icon: Search,
         },
         {
           title: "Links",
           url: "#",
+          icon: Link,
         },
       ],
     },
@@ -96,18 +120,22 @@ export const SIDEBAR_DATA = {
         {
           title: "Photos",
           url: "#",
+          icon: Image,
         },
         {
           title: "Videos",
           url: "#",
+          icon: Video,
         },
         {
           title: "Music",
           url: "#",
+          icon: Music,
         },
         {
           title: "Podcasts",
           url: "#",
+          icon: Podcast,
         },
       ],
     },
@@ -119,18 +147,22 @@ export const SIDEBAR_DATA = {
         {
           title: "Events",
           url: "#",
+          icon: Calendar,
         },
         {
           title: "Notifications",
           url: "#",
+          icon: Bell,
         },
         {
           title: "Shares",
           url: "#",
+          icon: Share2,
         },
         {
           title: "Saved",
           url: "#",
+          icon: Bookmark,
         },
       ],
     },
@@ -142,14 +174,17 @@ export const SIDEBAR_DATA = {
         {
           title: "Hidden",
           url: "#",
+          icon: EyeOff,
         },
         {
           title: "Locations",
           url: "#",
+          icon: MapPin,
         },
         {
           title: "Configuration",
           url: "#",
+          icon: Settings,
         },
       ],
     },
