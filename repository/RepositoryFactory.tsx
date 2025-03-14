@@ -1,8 +1,10 @@
 import AuthRepository from "./AuthRepository";
+import TagsRepository from "./TagsRepository";
 import UsersRepository from "./UsersRepository";
 const repositories = {
   auth: AuthRepository,
   users: UsersRepository,
+  tags: TagsRepository,
 };
 
 export const RepositoryFactory = {

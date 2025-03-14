@@ -167,3 +167,32 @@ interface TABLE_VIEW_PROPS<T extends object> {
   sortDirection: "asc" | "desc";
   emptyState: React.ReactNode;
 }
+
+type TAGS_MODALS_STATE = {
+  delete: {
+    isOpen: boolean;
+    userId: number | null;
+  };
+  edit: {
+    isOpen: boolean;
+    userId: number | null;
+  };
+};
+
+interface FETCH_TAGS_HOOK_PROPS {
+  page: number;
+  pageSize: number;
+}
+
+interface TAGS_REDUX_STATE {
+  tags: TAG[];
+  current_page: number;
+  total_users: number;
+  total_pages: number;
+}
+
+interface FETCH_TAGS_PROPS {
+  page: number;
+  pageSize: number;
+  onComplete: () => void;
+}
