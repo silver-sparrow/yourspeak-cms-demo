@@ -196,3 +196,21 @@ interface FETCH_TAGS_PROPS {
   pageSize: number;
   onComplete: () => void;
 }
+
+interface FETCH_HOOK_REPORTS_PROPS {
+  page: number;
+  pageSize: number;
+}
+
+interface REPORTS_REDUX_STATE {
+  reports: REPORT[];
+  current_page: number;
+  total_users: number;
+  total_pages: number;
+}
+
+interface FETCH_REPORTS_PROPS {
+  page: number;
+  pageSize: number;
+  onComplete: () => void;
+}

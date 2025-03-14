@@ -72,7 +72,7 @@ const TableView = <T extends object>({
                 >
                   {column.cell
                     ? column.cell({ row })
-                    : String(row[column.accessorKey as keyof T] || "")}
+                    : String(row[column.accessorKey as keyof T] ?? "N/A")}
                 </TableCell>
               ))}
             </TableRow>
