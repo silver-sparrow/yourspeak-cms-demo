@@ -17,7 +17,6 @@ import {
   SidebarMenuSubButton,
   SidebarMenuSubItem,
 } from "@/components/ui/sidebar";
-import { useEffect } from "react";
 const NavMain = ({
   items,
 }: {
@@ -34,9 +33,6 @@ const NavMain = ({
   }[];
 }) => {
   const pathname = usePathname();
-  useEffect(() => {
-    console.log("pathname changed:", pathname);
-  }, [pathname]);
 
   return (
     <SidebarGroup>
@@ -45,7 +41,6 @@ const NavMain = ({
           const isGroupActive = item.items?.some(
             (subItem) => pathname === subItem.url
           );
-          console.log("isGroupActive testing", isGroupActive, pathname);
 
           return (
             <Collapsible

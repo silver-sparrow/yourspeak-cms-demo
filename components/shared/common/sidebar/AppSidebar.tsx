@@ -5,7 +5,6 @@ import {
   SidebarContent,
   SidebarFooter,
   SidebarHeader,
-  SidebarRail,
 } from "@/components/ui/sidebar";
 import {
   BottomNavUser,
@@ -26,7 +25,6 @@ const AppSidebar = ({ ...props }: React.ComponentProps<typeof Sidebar>) => {
       <SidebarFooter>
         <BottomNavUser user={SIDEBAR_DATA.user} />
       </SidebarFooter>
-      <SidebarRail />
     </Sidebar>
   );
 };
