@@ -43,7 +43,7 @@ export default function RootLayout({
         <AppSidebar />
         <SidebarInset>
           <Header />
-          <div className="flex flex-1 flex-col gap-4 px-6 py-4 bg-page rounded-xl">
+          <div className="flex flex-1 flex-col gap-4 px-2 sm:px-6 py-4 bg-page rounded-xl">
             {children}
           </div>
         </SidebarInset>

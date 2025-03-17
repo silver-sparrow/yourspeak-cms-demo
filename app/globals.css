@@ -29,22 +29,22 @@ textarea {
 }
 
 .text-primary {
-  color: #d62027;
+  color: #d62027 !important;
 }
 
 .text-secondary {
-  color: #000000;
+  color: #000000 !important;
 }
 
 .bg-primary {
-  background-color: #d62027;
+  background: #d62027 !important;
 }
 
 .bg-secondary {
-  background-color: #000000;
+  background-color: #000000 !important;
 }
 .bg-page {
-  background-color: #eef2f6;
+  background-color: #eef2f6 !important;
 }
 
 :root {

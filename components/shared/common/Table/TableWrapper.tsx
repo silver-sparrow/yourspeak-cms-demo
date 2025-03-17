@@ -73,9 +73,9 @@ const TableWrapper = <T extends object>({
 
   return (
     <div className={`w-full ${className}`}>
-      <div className="flex flex-col lg:flex-row items-start sm:items-center justify-between gap-4 mb-6">
+      <div className="flex flex-col xl:flex-row items-start sm:items-center justify-between gap-4 mb-6">
         {isTab && (
-          <div className="w-full sm:w-auto">
+          <div className="w-full xl:w-auto">
             <UsersTabList />
           </div>
         )}
@@ -84,7 +84,7 @@ const TableWrapper = <T extends object>({
             value={searchQuery}
             onChange={(e: string) => setSearchQuery(e)}
             placeholder="Search by name, email or username..."
-            className="w-full sm:w-auto sm:min-w-full lg:min-w-[400px]"
+            className="w-full sm:w-auto sm:min-w-full xl:min-w-[400px]"
           />
         )}
       </div>

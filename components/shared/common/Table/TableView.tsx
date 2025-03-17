@@ -57,8 +57,34 @@ const TableView = <T extends object>({
                         )}
                       </span>
                     )}
+<<<<<<< HEAD
                   </div>
                 </TableHead>
+=======
+                  </span>
+                )}
+              </div>
+            </TableHead>
+          ))}
+        </TableRow>
+      </TableHeader>
+      <TableBody>
+        {sortedData.length > 0 ? (
+          sortedData.map((row: T, rowIndex: number) => (
+            <TableRow
+              key={rowIndex}
+              className="border-b border-gray-200 hover:bg-gray-50 transition-colors"
+            >
+              {columns.map((column: COLUMN_DEF<T>, colIndex: number) => (
+                <TableCell
+                  key={`${rowIndex}-${colIndex}`}
+                  className={`px-4 py-2 ${column.meta?.className || ""}`}
+                >
+                  {column.cell
+                    ? column.cell({ row })
+                    : String(row[column.accessorKey as keyof T] ?? "N/A")}
+                </TableCell>
+>>>>>>> 21ca0765024f3b844b6c0456e06f2178b40ad9ae
               ))}
             </TableRow>
           </TableHeader>
