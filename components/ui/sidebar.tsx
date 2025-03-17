@@ -27,7 +27,8 @@ import {
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state";
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7;
-const SIDEBAR_WIDTH = "16rem";
+const SIDEBAR_WIDTH = "w-1/5"; 
+
 const SIDEBAR_WIDTH_MOBILE = "18rem";
 const SIDEBAR_WIDTH_ICON = "3rem";
 const SIDEBAR_KEYBOARD_SHORTCUT = "b";
@@ -516,14 +517,12 @@ function SidebarMenuButton({
       data-sidebar="menu-button"
       data-size={size}
       data-active={isActive}
-
       className={cn(
         sidebarMenuButtonVariants({ variant, size }),
         "transition-colors",
         "data-[active=true]:bg-[#d62027] data-[active=true]:text-white",
         className
       )}
-      
       {...props}
     />
   );

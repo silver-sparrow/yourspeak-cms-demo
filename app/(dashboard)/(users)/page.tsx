@@ -117,9 +117,13 @@ const Page = () => {
   }, [activeTab]);
 
   return (
-    <div className="px-4 py-6 bg-white rounded-xl">
+    <div className="px-4 py-6 bg-white rounded-xl  ">
       <h1 className="text-2xl font-bold mb-6">Users</h1>
-      <Tabs defaultValue="all" onValueChange={setActiveTab}>
+      <Tabs
+        defaultValue="all"
+        onValueChange={setActiveTab}
+        // className="w-full overflow-x-auto"
+      >
         {USERS_TAB_OPTIONS.map((tab) => (
           <TabsContent key={tab.value} value={tab.value} className="mt-0">
             <TableWrapper
