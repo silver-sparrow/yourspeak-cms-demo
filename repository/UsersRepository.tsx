@@ -9,7 +9,7 @@ export default class UsersRepository {
     return Repository.get(
       `/profiles?page=${page}&per_page=${pageSize}${
         payload !== "all" ? `&selected_tab=${payload}` : ""
-      }`
+      }` 
     );
   }
 

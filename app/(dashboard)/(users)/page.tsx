@@ -138,26 +138,26 @@ const Page = () => {
           </TabsContent>
         ))}
       </Tabs>
-      <ConfirmationModal
-        isOpen={isModals.delete.isOpen}
-        onClose={() => handleToggleModal("delete")}
-        onConfirm={handleDeleteUser}
-        title="Delete User"
-        description="Are you sure you want to delete this user? This action cannot be undone."
-        type="delete"
-      />
-      <ConfirmationModal
-        isOpen={isModals.status.isOpen}
-        onClose={() => handleToggleModal("status")}
-        onConfirm={handleToggleStatus}
-        title={!isModals.status.isActive ? "Activate User" : "Deactivate User"}
-        description={
-          !isModals.status.isActive
-            ? "Are you sure you want to activate this user?"
-            : "Are you sure you want to deactivate this user?"
-        }
-        type={!isModals.status.isActive ? "success" : "error"}
-      />
+        <ConfirmationModal
+          isOpen={isModals.delete.isOpen}
+          onClose={() => handleToggleModal("delete")}
+          onConfirm={handleDeleteUser}
+          title="Delete User"
+          description="Are you sure you want to delete this user? This action cannot be undone."
+          type="delete"
+        />
+        <ConfirmationModal
+          isOpen={isModals.status.isOpen}
+          onClose={() => handleToggleModal("status")}
+          onConfirm={handleToggleStatus}
+          title={!isModals.status.isActive ? "Activate User" : "Deactivate User"}
+          description={
+            !isModals.status.isActive
+              ? "Are you sure you want to activate this user?"
+              : "Are you sure you want to deactivate this user?"
+          }
+          type={!isModals.status.isActive ? "success" : "error"}
+        />
     </div>
   );
 };
